@@ -258,3 +258,59 @@ td {
 [data-theme="dark"] .text-dark {
     color: var(--text-primary) !important;
 }
+
+
+/* Add or update these rules in your styles.css */
+
+/* First, let's handle the light theme */
+.card,
+.card-body,
+.container,
+.content,
+.details-container,
+.content-box,
+.content-wrapper,
+.main-container,
+.dashboard-content,
+.consultation-details,
+.pet-details,
+.vaccination-details,
+.food-guide-content,
+.training-content,
+.dashboard-card,
+.info-card {
+    background-color: #ffffff !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Now specifically target dark theme */
+[data-theme="dark"] .card,
+[data-theme="dark"] .card-body,
+[data-theme="dark"] .container,
+[data-theme="dark"] .content,
+[data-theme="dark"] .details-container,
+[data-theme="dark"] .content-box,
+[data-theme="dark"] .content-wrapper,
+[data-theme="dark"] .main-container,
+[data-theme="dark"] .dashboard-content,
+[data-theme="dark"] .consultation-details,
+[data-theme="dark"] .pet-details,
+[data-theme="dark"] .vaccination-details,
+[data-theme="dark"] .food-guide-content,
+[data-theme="dark"] .training-content,
+[data-theme="dark"] .dashboard-card,
+[data-theme="dark"] .info-card {
+    background-color: #242631 !important;
+    border: 1px solid #374151 !important;
+    color: #ffffff !important;
+}
+
+/* Additional specific overrides for Bootstrap cards */
+[data-theme="dark"] .bg-white {
+    background-color: #242631 !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: #ffffff !important;
+}
