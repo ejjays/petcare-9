@@ -29,31 +29,61 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Sidebar styles */
 .sidebar {
     background-color: var(--bg-secondary) !important;
     border-color: var(--border-color) !important;
 }
 
+/* Main content styles */
 .main-content {
     background-color: var(--bg-primary) !important;
 }
 
-/* Style cards and containers */
+/* All container types */
+.details-container,
+.content-box,
+.content-wrapper,
+.main-container,
+.dashboard-content,
+.consultation-details,
+.pet-details,
+.vaccination-details,
+.food-guide-content,
+.training-content,
+.container,
+.content,
+.box,
+[class*="container"],
+[class*="content"],
+[class*="box"] {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Cards styles */
 .card, 
 .consultation-card,
-.pet-card {
+.pet-card,
+.dashboard-card,
+.info-card {
     background-color: var(--card-bg) !important;
     border-color: var(--border-color) !important;
     color: var(--text-primary) !important;
 }
 
-/* Style modals */
-.modal-content {
+/* Modal styles */
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
     background-color: var(--modal-bg) !important;
     color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
 }
 
-/* Style inputs */
+/* Form elements */
 input, 
 select, 
 textarea {
@@ -62,28 +92,64 @@ textarea {
     border-color: var(--border-color) !important;
 }
 
-/* Style tables */
-table {
+/* Table styles */
+table,
+.table {
     background-color: var(--card-bg) !important;
     color: var(--text-primary) !important;
 }
 
-tr:nth-child(even) {
+th,
+td {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Additional specific elements */
+.navbar {
     background-color: var(--bg-secondary) !important;
 }
 
-/* Navigation links */
-.nav-link {
-    color: var(--text-secondary) !important;
+.dropdown-menu {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
 }
 
-.nav-link:hover {
+.dropdown-item {
+    color: var(--text-primary) !important;
+}
+
+.dropdown-item:hover {
     background-color: var(--bg-secondary) !important;
-    color: var(--accent-color) !important;
+}
+
+/* Force dark theme specific overrides */
+[data-theme="dark"] .card,
+[data-theme="dark"] .container,
+[data-theme="dark"] .content,
+[data-theme="dark"] .box,
+[data-theme="dark"] [class*="container"],
+[data-theme="dark"] [class*="content"],
+[data-theme="dark"] [class*="box"] {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Additional utility classes */
+.bg-white {
+    background-color: var(--card-bg) !important;
+}
+
+.text-dark {
+    color: var(--text-primary) !important;
 }
 
 
-/* Style for main content containers/boxes */
+
+/* Add these rules after your existing CSS in styles.css */
+
+/* Content boxes and containers */
 .details-container,
 .content-box,
 .content-wrapper,
@@ -99,19 +165,96 @@ tr:nth-child(even) {
     color: var(--text-primary) !important;
 }
 
-/* Additional styles for nested content boxes */
-.content-section,
-.info-box,
-.details-box,
-.status-box {
-    background-color: var(--bg-secondary) !important;
-    border: 1px solid var(--border-color) !important;
+/* Additional card styles */
+.dashboard-card,
+.info-card,
+[class*="card"] {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
     color: var(--text-primary) !important;
 }
 
-/* Style for any white background containers */
+/* Force dark theme specific overrides */
+[data-theme="dark"] .details-container,
+[data-theme="dark"] .content-box,
+[data-theme="dark"] .content-wrapper,
+[data-theme="dark"] .main-container,
+[data-theme="dark"] .dashboard-content,
+[data-theme="dark"] .consultation-details,
+[data-theme="dark"] .pet-details,
+[data-theme="dark"] .vaccination-details,
+[data-theme="dark"] .card,
+[data-theme="dark"] [class*="card"],
+[data-theme="dark"] [class*="content"] {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Generic container classes */
 [class*="container"],
 [class*="content"],
 [class*="box"] {
     background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+
+/* Add these rules to your existing styles.css */
+
+/* Content boxes and containers */
+.details-container,
+.content-box,
+.content-wrapper,
+.main-container,
+.dashboard-content,
+.consultation-details,
+.pet-details,
+.vaccination-details,
+.food-guide-content,
+.training-content,
+.dashboard-card,
+.info-card,
+.card-body,
+[class*="card"],
+[class*="container"],
+[class*="content"],
+[class*="box"] {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Dark theme specific overrides */
+[data-theme="dark"] .details-container,
+[data-theme="dark"] .content-box,
+[data-theme="dark"] .content-wrapper,
+[data-theme="dark"] .main-container,
+[data-theme="dark"] .dashboard-content,
+[data-theme="dark"] .consultation-details,
+[data-theme="dark"] .pet-details,
+[data-theme="dark"] .vaccination-details,
+[data-theme="dark"] .food-guide-content,
+[data-theme="dark"] .training-content,
+[data-theme="dark"] .dashboard-card,
+[data-theme="dark"] .info-card,
+[data-theme="dark"] .card-body,
+[data-theme="dark"] .card,
+[data-theme="dark"] [class*="card"],
+[data-theme="dark"] [class*="container"],
+[data-theme="dark"] [class*="content"],
+[data-theme="dark"] [class*="box"] {
+    background-color: #242631 !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Bootstrap overrides for dark theme */
+[data-theme="dark"] .bg-white {
+    background-color: #242631 !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: var(--text-primary) !important;
 }
