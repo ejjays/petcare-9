@@ -1,0 +1,148 @@
+/* Default (Light) theme variables */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --text-primary: #1F2937;
+    --text-secondary: #4B5563;
+    --border-color: #e5e7eb;
+    --accent-color: #8B5CF6;
+    --card-bg: #ffffff;
+    --modal-bg: #ffffff;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --bg-primary: #1a1c23;
+    --bg-secondary: #121317;
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --border-color: #374151;
+    --accent-color: #9f75ff;
+    --card-bg: #242631;
+    --modal-bg: #242631;
+}
+
+/* Apply theme styles */
+body {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    transition: all 0.3s ease;
+}
+
+.sidebar {
+    background-color: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+}
+
+.main-content {
+    background-color: var(--bg-primary) !important;
+}
+
+/* Style cards and containers */
+.card, 
+.consultation-card,
+.pet-card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Style modals */
+.modal-content {
+    background-color: var(--modal-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Style inputs */
+input, 
+select, 
+textarea {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Style tables */
+table {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-secondary) !important;
+}
+
+/* Navigation links */
+.nav-link {
+    color: var(--text-secondary) !important;
+}
+
+.nav-link:hover {
+    background-color: var(--bg-secondary) !important;
+    color: var(--accent-color) !important;
+}
+
+
+/* Style for main content containers/boxes */
+.details-container,
+.content-box,
+.content-wrapper,
+.main-container,
+.dashboard-content,
+.consultation-details,
+.pet-details,
+.vaccination-details,
+.food-guide-content,
+.training-content {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Additional styles for nested content boxes */
+.content-section,
+.info-box,
+.details-box,
+.status-box {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Style for any white background containers */
+[class*="container"],
+[class*="content"],
+[class*="box"] {
+    background-color: var(--card-bg) !important;
+}
+
+
+
+
+/* Target the welcome header/container */
+.welcome-container,
+.welcome-header,
+.welcome-message,
+.dashboard-header,
+.section-header {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Target the status/summary boxes */
+.status-summary,
+.pet-summary,
+.welcome-box,
+.info-summary {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Target any header sections */
+.header,
+.header-container,
+.header-content {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+}
